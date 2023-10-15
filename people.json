@@ -1,0 +1,32 @@
+{
+  "People": [
+    {
+      "id": 1,
+      "Name": "Max",
+      "Age": 20,
+      "Gender": "Male",
+      "friends": [2, 3]
+    },
+    {
+      "id": 2,
+      "Name": "Alice",
+      "Age": 25,
+      "Gender": "Female",
+      "friends": [1]
+    },
+    {
+      "id": 3,
+      "Name": "Bob",
+      "Age": 22,
+      "Gender": "Male",
+      "friends": [1, 4]
+    },
+    {
+      "id": 4,
+      "Name": "Joe",
+      "Age": 52,
+      "Gender": "Male",
+      "friends": [3]
+    }
+  ]
+}
