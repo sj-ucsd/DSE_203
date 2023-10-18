@@ -3,7 +3,8 @@
 	"dest":"json-file"
 	"data-dir":"./"
 	"schema-map": {
-		"graph_element":"nodes" [{
+		"graph_element":"nodes" [
+		{
 			"node-type":"$.People" {
 				"label":"People"
 				"node-id":"$.People.ID"
@@ -11,18 +12,20 @@
 					"Name":"$.People.name"
 					"Age":"$.People.Age"
 					"Gender":"$.People.Gender"
-				}]
+				}
 			}
-		}
-		"graph_element":"edges" {
+		}]
+		"graph_element":"edges" [
+		{
 			"edge-type":"$.People.friends"{
 				"relatioship":"IS_FRIENDS_WITH"
+				"direction":"Out"
 				"edge-id":""
 				"edge-properties":""
 				"_source":"$.People.ID"
-				"_target":["$.People.friends"]
+				"_target":"$.People.friends"
 			}
-		}
+		}]
 	}
 }
 	
