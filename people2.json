@@ -37,21 +37,21 @@
     },
     {
       "id": 6,
-      "Name": ["Ken","Kennedy","Kenneth"]
+      "Name": ["Ken","Kennedy","Kenneth"],
       "Age": "unknown",
       "Gender": "Male",
       "friends": []
     },
     {
       "id": 7,
-      "Name": ["Sally"]
+      "Name": ["Sally"],
       "Age": "19",
       "Gender": "Female",
       "friends": [2,1,3,6,5,4]
     },
     {
       "id": 8,
-      "Name": ["Ka‘anapali"]
+      "Name": ["Ka‘anapali"],
       "Age": "19",
       "Gender": "Not Stated",
       "friends": [5,4]

@@ -1,0 +1,199 @@
+{
+    "graph": {
+        "nodes": [
+            {
+                "node": {
+                    "id": 1,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 2,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 3,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 4,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 5,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 6,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 7,
+                    "label": "People",
+                    "properties": {}
+                }
+            },
+            {
+                "node": {
+                    "id": 8,
+                    "label": "People",
+                    "properties": {}
+                }
+            }
+        ],
+        "edges": [
+            {
+                "edge": {
+                    "id": 1,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 1,
+                    "to_node_id": 2,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 2,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 1,
+                    "to_node_id": 3,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 3,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 2,
+                    "to_node_id": 1,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 4,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 3,
+                    "to_node_id": 1,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 5,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 3,
+                    "to_node_id": 4,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 6,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 4,
+                    "to_node_id": 3,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 7,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 5,
+                    "to_node_id": 2,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 8,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 2,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 9,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 1,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 10,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 3,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 11,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 6,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 12,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 5,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 13,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 7,
+                    "to_node_id": 4,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 14,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 8,
+                    "to_node_id": 5,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 15,
+                    "relationship": "FRIENDS",
+                    "from_node_id": 8,
+                    "to_node_id": 4,
+                    "properties": {}
+                }
+            }
+        ]
+    }
+}
