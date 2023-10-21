@@ -1,0 +1,8 @@
+setup.py
+sstopgraph/__init__.py
+sstopgraph/sstopgraph.py
+sstopgraph_pkg.egg-info/PKG-INFO
+sstopgraph_pkg.egg-info/SOURCES.txt
+sstopgraph_pkg.egg-info/dependency_links.txt
+sstopgraph_pkg.egg-info/requires.txt
+sstopgraph_pkg.egg-info/top_level.txt
