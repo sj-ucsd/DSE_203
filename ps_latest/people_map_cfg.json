@@ -6,7 +6,7 @@
                 "label": "People",
                 "node-id": "id",
                 "node-properties": {
-                    "Name": "name",
+                    "Name": "Name",
                     "Age": "Age",
                     "Gender": "Gender"
                 }
