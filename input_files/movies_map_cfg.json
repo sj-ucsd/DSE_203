@@ -39,7 +39,7 @@
 			"_target_type":"$.movies"
 		},
 		{
-			"edge-type":"$.People.friends"
+			"edge-type":"$.People.friends",
 			"relatioship":"IS_FRIENDS_WITH",
 			"direction":"Out",
 			"edge-id":"",
