@@ -1,0 +1,27 @@
+{
+    "schema-map": {
+        "nodes": [
+            {
+                "node-type": "$.People",
+                "label": "People",
+                "node-id": "$.People.id",
+                "node-properties": {
+                    "Name": "$.People.name",
+                    "Age": "$.People.Age",
+                    "Gender": "$.People.Gender"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "edge-type": "$.People.friends",
+                "relatioship": "IS_FRIENDS_WITH",
+                "direction": "Out",
+                "edge-id": "",
+                "edge-properties": "",
+                "_source": "$.People.id",
+                "_target": "$.People.friends"
+            }
+        ]
+    }
+}
