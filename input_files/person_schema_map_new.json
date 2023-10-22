@@ -6,7 +6,7 @@
                 "label": "People",
                 "node-id": "$.People.id",
                 "node-properties": {
-                    "Name": "$.People.name",
+                    "Name": "$.People.Name",
                     "Age": "$.People.Age",
                     "Gender": "$.People.Gender"
                 }
