@@ -3,7 +3,7 @@
 ## Package details
 **sstopgraph** package takes a semistructured data in json format as input and generates pgraph in json format as output. 
 The package is available from test Pypi at https://test.pypi.org/project/sstopgraph-pkg/1.1/ 
-*** build instructions ***
+### build instructions 
 To build and deploy the package locally, recommend following steps:
 1. Create a virtual environment. Example steps to create and activate virutal environment are as follows:
    - Change to your working directory
@@ -14,8 +14,9 @@ To build and deploy the package locally, recommend following steps:
 2. download the **sstopgraph_pkg**. Perform following steps:
    - To install the pacakge in the virtual environment above, after actvation, run `pip install -e .` This step will build the **sstopgraph** package locally and available to be imported in any python program
    - to check correct installation, run python on terminal and type `from sstopgraph import sstopgraph` - this should work correctly
-3. To check usage, see the example file **test_sstopgraph_transform.py**
-4. Sample code once installed:
+### Usage
+1. To check usage, see the example file **test_sstopgraph_transform.py**
+2. Sample code once installed:
    ```
    from sstopgraph import sstopgraph
    sstopgraph.semistruct_to_pgraph(<input file name including path>, \
