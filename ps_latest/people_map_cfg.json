@@ -29,7 +29,9 @@
                 "edge-id": "",
                 "edge-properties": "",
                 "_source": "id",
-                "_target": "friends"
+				"_source_type":"People",
+                "_target": "friends",
+				"_target_type":"People"
             }
         ]
     }
