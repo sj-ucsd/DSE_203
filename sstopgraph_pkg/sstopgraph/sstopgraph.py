@@ -37,7 +37,7 @@ def semistruct_to_pgraph(in_file, mapcfg_file, out_file='./pgraph.txt',debug=Fal
    }
 
    # Save the property graph in JSON format
-   with open("property_graph.json", "w") as output_file:
+   with open(out_file, "w") as output_file:
      json.dump(property_graph, output_file, indent=4)
 
    return
