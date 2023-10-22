@@ -1,0 +1,79 @@
+{
+	"schema-map": {
+		"nodes" : [
+		{
+			"node-type":"$.Movies",
+			"label":"Movies",
+			"node-id":"title",
+			"node-properties": {
+                    "Extract": {
+                        "data_type": "string",
+                        "data_value": "extract"
+                    },
+                    "thumbnail_url": {
+                        "data_type": "string",
+                        "data_value": "thumbnail"
+                    },
+					"thumbnail_width": {
+                        "data_type": "string",
+                        "data_value": "thumbnail_width"
+                    },
+                    "thumbnail_height": {
+                        "data_type": "string",
+                        "data_value": "thumbnail_height"
+                    },
+                    "Generes": {
+                        "data_type": "list",
+                        "data_value": "generes"
+                    },
+                    "Cast": {
+                        "data_type": "string",
+                        "data_value": "cast"
+                    }
+                }
+		},	
+		{
+			"node-type":"$.People",
+			"label":"People",
+			"node-id":"id",
+                "node-properties": {
+                    "Name": {
+                        "data_type": "string",
+                        "data_value": "Name"
+                    },
+                    "Age": {
+                        "data_type": "numeric",
+                        "data_value": "Age"
+                    },
+                    "Gender": {
+                        "data_type": "string",
+                        "data_value": "Gender"
+                    }
+                }
+		}],
+		"edges" : [
+		{
+			"edge-type":"cast",
+			"relationship":"PLAYED_IN",
+			"direction":"Out",
+			"edge-id":"",
+			"edge-properties":"",
+			"_source":"cast",
+			"_source_type":"Movies",
+			"_target":"Name",
+			"_target_type":"People"
+		},
+		{
+			"edge-type":"friends",
+			"relationship":"IS_FRIENDS_WITH",
+			"direction":"Out",
+			"edge-id":"",
+			"edge-properties":"",
+			"_source":"id",
+			"_source_type":"People",
+			"_target":"friends",
+			"_target_type":"People"
+		}]
+	}
+}
+	
