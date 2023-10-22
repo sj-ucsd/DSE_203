@@ -36,15 +36,6 @@
 			"_source_type":"$.authors",
 			"_target":"$.books.title",
 			"_target_type":"$.books"
-		},
-		{
-			"edge-type":"$.People.friends"
-			"relatioship":"IS_FRIENDS_WITH",
-			"direction":"Out",
-			"edge-id":"",
-			"edge-properties":"",
-			"_source":"$.People.ID",
-			"_target":"$.People.friends"
 		}]
 	}
 }
