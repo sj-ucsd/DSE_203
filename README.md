@@ -24,3 +24,19 @@ To build and deploy the package locally, recommend following steps:
    ```
    If output file is not specified, an output file with name pgraph.json is automatically generated. debug parameter is optional. 
    
+### Input File
+1. Input File needs to be a well formed json file.
+2. The initial version of this translator will only recognize nodes that are  one level below the root of teh JSON file (i.e. no nested data that will become nodes)
+3. Example:
+   {
+      "node" :[
+      {
+         "attribute1":"value1",
+         "attribute2":"value2",
+         ...
+      },
+      {
+         ...
+      },
+      ...]
+   
