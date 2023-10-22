@@ -5,56 +5,168 @@
                 "node": {
                     "id": 1,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Max"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 20
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 2,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Alice"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 25
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Female"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 3,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Bob"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 22
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 4,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Joe"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 52
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 5,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Van Dyke"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 42
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": ""
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 6,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Ken",
+                                "Kennedy",
+                                "Kenneth"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "unknown"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 7,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Sally"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "19"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Female"
+                        }
+                    }
                 }
             },
             {
                 "node": {
                     "id": 8,
                     "label": "People",
-                    "properties": {}
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Ka\u2018anapali"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "19"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Not Stated"
+                        }
+                    }
                 }
             }
         ],
@@ -62,7 +174,7 @@
             {
                 "edge": {
                     "id": 1,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 1,
                     "to_node_id": 2,
                     "properties": {}
@@ -71,7 +183,7 @@
             {
                 "edge": {
                     "id": 2,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 1,
                     "to_node_id": 3,
                     "properties": {}
@@ -80,7 +192,7 @@
             {
                 "edge": {
                     "id": 3,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 2,
                     "to_node_id": 1,
                     "properties": {}
@@ -89,7 +201,7 @@
             {
                 "edge": {
                     "id": 4,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 3,
                     "to_node_id": 1,
                     "properties": {}
@@ -98,7 +210,7 @@
             {
                 "edge": {
                     "id": 5,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 3,
                     "to_node_id": 4,
                     "properties": {}
@@ -107,7 +219,7 @@
             {
                 "edge": {
                     "id": 6,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 4,
                     "to_node_id": 3,
                     "properties": {}
@@ -116,7 +228,7 @@
             {
                 "edge": {
                     "id": 7,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 5,
                     "to_node_id": 2,
                     "properties": {}
@@ -125,7 +237,7 @@
             {
                 "edge": {
                     "id": 8,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 2,
                     "properties": {}
@@ -134,7 +246,7 @@
             {
                 "edge": {
                     "id": 9,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 1,
                     "properties": {}
@@ -143,7 +255,7 @@
             {
                 "edge": {
                     "id": 10,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 3,
                     "properties": {}
@@ -152,7 +264,7 @@
             {
                 "edge": {
                     "id": 11,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 6,
                     "properties": {}
@@ -161,7 +273,7 @@
             {
                 "edge": {
                     "id": 12,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 5,
                     "properties": {}
@@ -170,7 +282,7 @@
             {
                 "edge": {
                     "id": 13,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 7,
                     "to_node_id": 4,
                     "properties": {}
@@ -179,7 +291,7 @@
             {
                 "edge": {
                     "id": 14,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 8,
                     "to_node_id": 5,
                     "properties": {}
@@ -188,7 +300,7 @@
             {
                 "edge": {
                     "id": 15,
-                    "relationship": "FRIENDS",
+                    "relationship": "IS_FRIENDS_WITH",
                     "from_node_id": 8,
                     "to_node_id": 4,
                     "properties": {}
