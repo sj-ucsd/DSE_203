@@ -56,25 +56,36 @@ To build and deploy the package locally, recommend following steps:
 ### Mapping Configuration File
 Mapping Configuration Files are used to provide the instructions on which fileds in the data input file apply to which elemnts in a property graph. 
 
-1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship, direction, _source, _target, edge-properties).
-2. Template Mapping Cofiguration File looks like the following:
-      {
-      "node" :[
-      {
-         "attribute1":"value1",
-         "attribute2":"value2",
-         ...
-      },
-      {
-         ...
-      },
-      ...],
-   "some other kind of node" :[
-         {
-         "attribute1":"value1",
-         "attribute2":["value2a","value2b","value2c","value2d"],
-         ...
-      },
+1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship, direction, _source, _target, edge-properties). If the data file does not have input that goes into one of these fields, then the field is still included but the value would be an empty string "".
+2. Networkx is used to generate the graph internally to the translator, so the id is used as the displayed value for the node.
+3. Template Mapping Cofiguration File looks like the following:
+{
+    "schema-map": {
+        "nodes": [
+            {
+                "node-type": "jsonpath", (ex: "$.People") This is the root path. 
+                "label": "type of node", (ex: "People")
+                "node-id": "jsonpath",	(ex: "$.People.id")
+                "node-properties": {
+                    "key": "jsonpath",
+                    "key": "jsonpath",
+                    ...
+                }
+            }
+        ],
+        "edges": [
+            {
+                "edge-type": "jsonpath",	(ex: "$.People") This is the root path. 
+                "relationship": "value",	(ex: "Is_Friends_with")
+                "direction": "Out",			(possible values: "In", "Out", "Both", "None")
+                "edge-id": "value",			(ex: "1") If this value is an empty string, then the translator will generate an id.
+                "edge-properties": "",		(In this case the edge doesn't have any properties to add, but it could if you added them in like shown in the node properties above.)
+                "_source": "jsonpath",	(ex: "$.People.id") This is the location of the data that is the source point of the edge node connection.
+                "_target": "jsonpath"	(ex: "$.People.friends") This is the location of the data that is the target point of the edge node connection.
+            }
+        ]
+    }
+}
       {
          ...
       },
