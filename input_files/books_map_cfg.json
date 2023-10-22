@@ -1,0 +1,51 @@
+{
+	"schema-map": {
+		"nodes" : [
+		{
+			"node-type":"$.books",
+			"label":"Books",
+			"node-id":"",
+			"node-properties":{
+				"Title":"$.books.title",
+				"Author":"$.books.author",
+				"Published Year":"$.books.published_year",
+				"ISBN": "$books.isbn",
+				"Genere": "$.books.genre"
+			}
+		},	
+		{
+			"node-type":"$.authors",
+			"label":"Authors",
+			"node-id":"",
+			"node-properties":{
+				"Name":"$.authors.name",
+				"Birth Year":"$.authors.birth_year",
+				"Death Year":"$.authors.death_year",
+				"Country of Birth":"$.authors.country_of_birth"
+			}
+
+		}],
+		"edges" : [
+		{
+			"edge-type":"",
+			"relatioship":"Created",
+			"direction":"Out",
+			"edge-id":"",
+			"edge-properties":"",
+			"_source":"$.books.author",
+			"_source_type":"$.authors",
+			"_target":"$.books.title",
+			"_target_type":"$.books"
+		},
+		{
+			"edge-type":"$.People.friends"
+			"relatioship":"IS_FRIENDS_WITH",
+			"direction":"Out",
+			"edge-id":"",
+			"edge-properties":"",
+			"_source":"$.People.ID",
+			"_target":"$.People.friends"
+		}]
+	}
+}
+	
