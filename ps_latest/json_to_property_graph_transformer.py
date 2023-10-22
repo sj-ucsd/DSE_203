@@ -47,20 +47,25 @@ for element in source_data[mapping_config['schema-map']['nodes'][0]['label']]:
 
     # Map properties to the node
     for property_name, property_mapping in mapping_config['schema-map']['nodes'][0]['node-properties'].items():
-        property_value = element
-        for key in property_mapping.split('.'):
-            property_value = property_value.get(key, None)
-            if property_value is None:
-                break
+        # Assuming property_mapping is a dictionary
+        data_value = property_mapping.get("data_value", None)
+        data_type = property_mapping.get("data_type", None)
+
+        # Now, you can split the data_value (assuming it's a string)
+        if data_value is not None:
+            for key in data_value.split('.'):
+                property_value = element.get(key, None)
+                if property_value is None:
+                    break
 
         if property_value is not None:
             node["node"]["properties"][property_name] = {
-                "datatype": "string",  # comment : modify this based on the actual data types
+                "datatype": data_type,  # comment: modify this based on the actual data types
                 "data value": property_value
             }
 
     property_graph["graph"]["nodes"].append(node)
-    
+
 
 # source data and add edges to the property graph
 for element in source_data[mapping_config['schema-map']['nodes'][0]['label']]:
