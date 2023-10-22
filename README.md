@@ -27,7 +27,7 @@ To build and deploy the package locally, recommend following steps:
 ### Input File
 1. Input File needs to be a well formed json file.
 2. The initial version of this translator will only recognize nodes that are  one level below the root of teh JSON file (i.e. no nested data that will become nodes)
-3. Example:
+3. Template of a data input file is as follows:
    {
       "node" :[
       {
@@ -51,5 +51,34 @@ To build and deploy the package locally, recommend following steps:
       ...],
    ...
 }
-   
-See examples in the input_files folder: people.son, movies.json, and books.json
+4. See examples in the input_files folder: people.json, movies.json, and books.json
+
+### Mapping Configuration File
+Mapping Configuration Files are used to provide the instructions on which fileds in the data input file apply to which elemnts in a property graph. 
+
+1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship, direction, _source, _target, edge-properties).
+2. Template Mapping Cofiguration File looks like the following:
+      {
+      "node" :[
+      {
+         "attribute1":"value1",
+         "attribute2":"value2",
+         ...
+      },
+      {
+         ...
+      },
+      ...],
+   "some other kind of node" :[
+         {
+         "attribute1":"value1",
+         "attribute2":["value2a","value2b","value2c","value2d"],
+         ...
+      },
+      {
+         ...
+      },
+      ...],
+   ...
+}
+4. See examples in the input_files folder: people_map_cfg.json, movies_map_cfg.json, and books_map_cfg.json
