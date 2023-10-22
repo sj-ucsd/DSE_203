@@ -38,5 +38,18 @@ To build and deploy the package locally, recommend following steps:
       {
          ...
       },
-      ...]
+      ...],
+   "some other kind of node" :[
+         {
+         "attribute1":"value1",
+         "attribute2":["value2a","value2b","value2c","value2d"],
+         ...
+      },
+      {
+         ...
+      },
+      ...],
+   ...
+}
    
+See examples in the input_files folder: people.son, movies.json, and books.json
