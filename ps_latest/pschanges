@@ -1,0 +1,4 @@
+1-use config file as i uploaded here to work code as parametrized :people_map_cfg
+2- uploaded both notebook (DSE203-Assinment1.ipynb) as well as python code file (json_to_property_graph_transformer.py) : it's all parametrized now
+3-  sample file run command through command prompt ( python json_to_property_graph_transformer.py people2.json people_map_cfg.json )
+4- output file can be parametrized, havenot got chnace to look into it, should be complex
