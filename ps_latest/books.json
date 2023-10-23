@@ -1,0 +1,130 @@
+{
+    "Books": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "published_year": 1925,
+            "isbn": "978-0743273565",
+            "genre": "Fiction"
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "published_year": 1960,
+            "isbn": "978-0061120084",
+            "genre": "Fiction"
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "published_year": 1949,
+            "isbn": "978-0451524935",
+            "genre": "Dystopian"
+        },
+        {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "published_year": 1813,
+            "isbn": "978-0141439518",
+            "genre": "Classic"
+        },
+        {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "published_year": 1951,
+            "isbn": "978-0316769488",
+            "genre": "Fiction"
+        },
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "published_year": 1997,
+            "isbn": "978-0439708180",
+            "genre": "Fantasy"
+        },
+        {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "author": "J.K. Rowling",
+            "published_year": 1998,
+            "isbn": "978-0439064866",
+            "genre": "Fantasy"
+        },
+        {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "published_year": 1937,
+            "isbn": "978-0345534835",
+            "genre": "Fantasy"
+        },
+        {
+            "title": "The Fellowship of the Ring",
+            "author": "J.R.R. Tolkien",
+            "published_year": 1954,
+            "isbn": "978-0618640157",
+            "genre": "Fantasy"
+        },
+        {
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "published_year": 1932,
+            "isbn": "978-0060850524",
+            "genre": "Dystopian"
+        },
+        {
+            "title": "Moby-Dick",
+            "author": "Herman Melville",
+            "published_year": 1851,
+            "isbn": "978-1853260087",
+            "genre": "Adventure"
+        }
+    ],
+    "Authors": [
+        {
+            "name": "Herman Melville",
+            "birth_year": 1819,
+            "death_year": 1891,
+            "country_of_birth": "United States"
+        },
+        {
+            "name": "Harper Lee",
+            "birth_year": 1926,
+            "death_year": 2016,
+            "country_of_birth": "United States"
+        },
+        {
+            "name": "George Orwell",
+            "birth_year": 1903,
+            "death_year": 1950,
+            "country_of_birth": "United Kingdom"
+        },
+        {
+            "name": "Jane Austen",
+            "birth_year": 1775,
+            "death_year": 1817,
+            "country_of_birth": "United Kingdom"
+        },
+        {
+            "name": "J.D. Salinger",
+            "birth_year": 1919,
+            "death_year": 2010,
+            "country_of_birth": "United States"
+        },
+        {
+            "name": "J.K. Rowling",
+            "birth_year": 1965,
+            "country_of_birth": "United Kingdom"
+        },
+        {
+            "name": "J.R.R. Tolkien",
+            "birth_year": 1892,
+            "death_year": 1973,
+            "country_of_birth": "United Kingdom"
+        },
+        {
+            "name": "Aldous Huxley",
+            "birth_year": 1894,
+            "death_year": 1963,
+            "country_of_birth": "United Kingdom"
+        }
+    ]
+}

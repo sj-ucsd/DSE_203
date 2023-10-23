@@ -1,0 +1,61 @@
+{
+	"schema-map": {
+		"nodes" : [
+		{
+			"node-type":"$.Books",
+			"label":"Books",
+			"node-id":"isbn",
+			"node-properties":{
+				"Title": {
+                        "data_type": "string",
+                        "data_value": "title"
+                    },
+				"Author":{
+                        "data_type": "string",
+                        "data_value": "author"
+                    },
+				"Published Year":{
+                        "data_type": "numeric",
+                        "data_value": "published_year"
+                    },
+				"Genere": {
+                        "data_type": "list",
+                        "data_value": "genere"
+                    }
+			}
+		},	
+		{
+			"node-type":"$.Authors",
+			"label":"Authors",
+			"node-id":"name",
+			"node-properties":{
+				"Birth Year":{
+                        "data_type": "numeric",
+                        "data_value": "birth_year"
+                    },
+				"Death Year":{
+                        "data_type": "numeric",
+                        "data_value": "death_year"
+                    },
+				"Country of Birth":{
+                        "data_type": "string",
+                        "data_value": "country_of_birth"
+                    }
+			}
+
+		}],
+		"edges" : [
+		{
+			"edge-type":"",
+			"relatioship":"Created",
+			"direction":"Out",
+			"edge-id":"",
+			"edge-properties":"",
+			"_source":"name",
+			"_source_type":"Authors",
+			"_target":"author",
+			"_target_type":"Books"
+		}]
+	}
+}
+	
