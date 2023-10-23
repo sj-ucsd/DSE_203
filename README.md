@@ -26,6 +26,7 @@ To build and deploy the package locally, recommend following steps:
    sstopgraph.semistruct_to_pgraph(<input file name including path>, \
          <mapping configuration file name including path>,[output file name including path],[debug=True])
    ```
+   Also see the example file DSE203_assignment1_example.ipynb.
 4. Specific example of code execution statment from the command line:
    ```
    python test_sstopgraph_transform.py -i ~/DSE_203/input_files/people.json -m ~/DSE_203/input_files/people_map_cfg.json -o people_pgraph.json
