@@ -8,6 +8,5 @@ setup(
                  (json) data to property graph',
     packages=find_packages(),
     install_requires=[
-    "jsonpath_ng"
     ],
 )
