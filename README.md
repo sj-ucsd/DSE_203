@@ -25,11 +25,15 @@ To build and deploy the package locally, recommend following steps:
    sstopgraph.semistruct_to_pgraph(<input file name including path>, \
          <mapping configuration file name including path>,[output file name including path],[debug=True])
    ```
+4. Specific example of code execution statment:
+   ```
+   python test_sstopgraph_transform.py -i ~/DSE_203/input_files/people.json -m ~/DSE_203/input_files/people_map_cfg.json -o people_pgraph.json
+   ```
    If output file is not specified, an output file with name pgraph.json is automatically generated. debug parameter is optional. 
    
 ## Input File
 1. Input File needs to be a well formed json file.
-2. The initial version of this translator will only recognize nodes that are  one level below the root of teh JSON file (i.e. no nested data that will become nodes)
+2. The initial version of this translator will only recognize nodes that are one level below the root of the JSON file (i.e. no nodes nested inside other nodes from the source data file)
 3. Template of a data input file is as follows:
    
 ```
@@ -58,12 +62,12 @@ To build and deploy the package locally, recommend following steps:
 }
 
 ```
-5. See examples in the input_files folder: people.json, movies.json, and books.json
+4. See examples in the input_files folder: people.json, movies.json, and books.json
 
 ## Mapping Configuration File
-Mapping Configuration Files are used to provide the instructions on which fileds in the data input file apply to which elemnts in a property graph. 
+Mapping Configuration Files are used to provide the instructions on which fileds in the data input file apply to which elements in a property graph. 
 
-1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship, direction, _source, _target, edge-properties). If the data file does not have input that goes into one of these fields, then the field is still included but the value would be an empty string "".
+1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship,  _source, _source_type, _target, _target_type). The node.node-properties consists of the following pattern: "attribute" {"data_type" : "<data_type_name>", "data_value" : "<value>"} (ex: "age": {"data_type":"numeric", "data_value":"22"}). If the data file does not have input that goes into one of these fields, then the field is still included but the value would be an empty string "" .
 2. Template Mapping Cofiguration File looks like the following:
 ```
 {
@@ -72,10 +76,10 @@ Mapping Configuration Files are used to provide the instructions on which fileds
             {
                 "node-type": "jsonpath", (ex: "$.People") This is the root path. 
                 "label": "type of node", (ex: "People")
-                "node-id": "key",	(A key value inside the node-type. For example, if the node had a key would be "name" if the following path was valid in the node $.People.name)
+                "node-id": "attribute",	(An attribute value inside the node-type. For example, if the node had a attribute "name" if the following path was valid in the node $.People.name)
                 "node-properties": {
-                    "key": "key",
-                    "key": "key",
+                    "attribute" : {"data_type" : "<data_type_name>", "data_value" : "<value>"},
+                    "attribute" : {"data_type" : "<data_type_name>", "data_value" : "<value>"},
                     ...
                 }
             }
@@ -85,9 +89,10 @@ Mapping Configuration Files are used to provide the instructions on which fileds
                 "edge-type": "jsonpath",	(ex: "$.People") This is the root path. 
                 "relationship": "value",	(ex: "Is_Friends_with")
                 "edge-id": "value",			(ex: "1") If this value is an empty string, then the translator will generate an id.
-                "edge-properties": "",		(In this case the edge doesn't have any properties to add, but it could if you added them in like shown in the node properties above.)
-                "_source": "jsonpath",	(ex: "$.People.id") This is the location of the data that is the source point of the edge node connection.
-                "_target": "jsonpath"	(ex: "$.People.friends") This is the location of the data that is the target point of the edge node connection.
+                "_source": "attribute",	(ex: "id") This is the location of the data that is the source point of the edge node connection.
+                "_source_type" : "label" (ex: People) This is the node label that is being referenced
+                "_target": "attribute"	(ex: "name") This is the location of the data that is the target point of the edge node connection.
+                "_target_type" : "label" (ex: People) This is the node label that is being referenced
             }
         ]
     }
@@ -101,8 +106,9 @@ Mapping Configuration Files are used to provide the instructions on which fileds
 
 ```
 
-5. See examples in the input_files folder: people_map_cfg.json, movies_map_cfg.json, and books_map_cfg.json
+3. See examples in the input_files folder: people_map_cfg.json, movies_map_cfg.json, and books_map_cfg.json
 
 ## Known issues/limitations
 1. Code doesn't support arbitrary parsing of jsonpath expressions to create nodes and edges. Planned for next revision
 2. Does not support special characters in strings. Will add utf support in future version
+3. For the edges, the _target has to be a property attribute of a node.
