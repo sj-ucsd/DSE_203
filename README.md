@@ -19,13 +19,13 @@ To build and deploy the package locally, recommend following steps:
   - To run test_sstopgraph_transform.py, use it `python test_sstopgraph_transform.py -i \<input file name\> -m \<mapping config file\> -o [output file] -d [True|False]`
   - Output file is optional and if not specified, will automatically generate pgraph.json
   - -d option for debug. Default debug is False
-3. Sample code once installed:
+3. Sample code execution statement from a python file or a Jupyter Notebook:
    ```
    from sstopgraph import sstopgraph
    sstopgraph.semistruct_to_pgraph(<input file name including path>, \
          <mapping configuration file name including path>,[output file name including path],[debug=True])
    ```
-4. Specific example of code execution statment:
+4. Specific example of code execution statment from the command line:
    ```
    python test_sstopgraph_transform.py -i ~/DSE_203/input_files/people.json -m ~/DSE_203/input_files/people_map_cfg.json -o people_pgraph.json
    ```
