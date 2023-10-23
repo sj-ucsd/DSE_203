@@ -1,0 +1,350 @@
+{
+    "graph": {
+        "nodes": [
+            {
+                "node": {
+                    "id": 1,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Max"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 20
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                2,
+                                3
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 2,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Alice"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 25
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Female"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                1
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 3,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Bob"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 22
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                1,
+                                4
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 4,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Joe"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 52
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                3
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 5,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": "Van Dyke"
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": 42
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": ""
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                2
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 6,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Ken",
+                                "Kennedy",
+                                "Kenneth"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "unknown"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Male"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": []
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 7,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Sally"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "19"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Female"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                2,
+                                1,
+                                3,
+                                6,
+                                5,
+                                4
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": 8,
+                    "label": "People",
+                    "properties": {
+                        "Name": {
+                            "datatype": "string",
+                            "data value": [
+                                "Ka\u2018anapali"
+                            ]
+                        },
+                        "Age": {
+                            "datatype": "numeric",
+                            "data value": "19"
+                        },
+                        "Gender": {
+                            "datatype": "string",
+                            "data value": "Not Stated"
+                        },
+                        "friends": {
+                            "datatype": "list",
+                            "data value": [
+                                5,
+                                4
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "edge": {
+                    "id": 1,
+                    "from_node_id": 1,
+                    "to_node_id": 2,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 2,
+                    "from_node_id": 1,
+                    "to_node_id": 3,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 3,
+                    "from_node_id": 1,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 4,
+                    "from_node_id": 2,
+                    "to_node_id": 1,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 5,
+                    "from_node_id": 2,
+                    "to_node_id": 5,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 6,
+                    "from_node_id": 2,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 7,
+                    "from_node_id": 3,
+                    "to_node_id": 1,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 8,
+                    "from_node_id": 3,
+                    "to_node_id": 4,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 9,
+                    "from_node_id": 3,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 10,
+                    "from_node_id": 4,
+                    "to_node_id": 3,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 11,
+                    "from_node_id": 4,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 12,
+                    "from_node_id": 4,
+                    "to_node_id": 8,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 13,
+                    "from_node_id": 5,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 14,
+                    "from_node_id": 5,
+                    "to_node_id": 8,
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 15,
+                    "from_node_id": 6,
+                    "to_node_id": 7,
+                    "properties": {}
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,464 @@
+{
+    "graph": {
+        "nodes": [
+            {
+                "node": {
+                    "id": "978-0743273565",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "The Great Gatsby"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "F. Scott Fitzgerald"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1925
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0061120084",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "To Kill a Mockingbird"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "Harper Lee"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1960
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0451524935",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "1984"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "George Orwell"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1949
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0141439518",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "Pride and Prejudice"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "Jane Austen"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1813
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0316769488",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "The Catcher in the Rye"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "J.D. Salinger"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1951
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0439708180",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "Harry Potter and the Sorcerer's Stone"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "J.K. Rowling"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1997
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0439064866",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "Harry Potter and the Chamber of Secrets"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "J.K. Rowling"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1998
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0345534835",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "The Hobbit"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "J.R.R. Tolkien"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1937
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0618640157",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "The Fellowship of the Ring"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "J.R.R. Tolkien"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1954
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-0060850524",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "Brave New World"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "Aldous Huxley"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1932
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "978-1853260087",
+                    "label": "Books",
+                    "properties": {
+                        "Title": {
+                            "datatype": "string",
+                            "data value": "Moby-Dick"
+                        },
+                        "Author": {
+                            "datatype": "string",
+                            "data value": "Herman Melville"
+                        },
+                        "Published Year": {
+                            "datatype": "numeric",
+                            "data value": 1851
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "Herman Melville",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1819
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 1891
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United States"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "Harper Lee",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1926
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 2016
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United States"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "George Orwell",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1903
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 1950
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United Kingdom"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "Jane Austen",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1775
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 1817
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United Kingdom"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "J.D. Salinger",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1919
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 2010
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United States"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "J.K. Rowling",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1965
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United Kingdom"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "J.R.R. Tolkien",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1892
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 1973
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United Kingdom"
+                        }
+                    }
+                }
+            },
+            {
+                "node": {
+                    "id": "Aldous Huxley",
+                    "label": "Authors",
+                    "properties": {
+                        "Birth Year": {
+                            "datatype": "numeric",
+                            "data value": 1894
+                        },
+                        "Death Year": {
+                            "datatype": "numeric",
+                            "data value": 1963
+                        },
+                        "Country of Birth": {
+                            "datatype": "string",
+                            "data value": "United Kingdom"
+                        }
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "edge": {
+                    "id": 1,
+                    "from_node_id": "Herman Melville",
+                    "to_node_id": "978-1853260087",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 2,
+                    "from_node_id": "Harper Lee",
+                    "to_node_id": "978-0061120084",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 3,
+                    "from_node_id": "George Orwell",
+                    "to_node_id": "978-0451524935",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 4,
+                    "from_node_id": "Jane Austen",
+                    "to_node_id": "978-0141439518",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 5,
+                    "from_node_id": "J.D. Salinger",
+                    "to_node_id": "978-0316769488",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 6,
+                    "from_node_id": "J.K. Rowling",
+                    "to_node_id": "978-0439708180",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 7,
+                    "from_node_id": "J.K. Rowling",
+                    "to_node_id": "978-0439064866",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 8,
+                    "from_node_id": "J.R.R. Tolkien",
+                    "to_node_id": "978-0345534835",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 9,
+                    "from_node_id": "J.R.R. Tolkien",
+                    "to_node_id": "978-0618640157",
+                    "properties": {}
+                }
+            },
+            {
+                "edge": {
+                    "id": 10,
+                    "from_node_id": "Aldous Huxley",
+                    "to_node_id": "978-0060850524",
+                    "properties": {}
+                }
+            }
+        ]
+    }
+}
