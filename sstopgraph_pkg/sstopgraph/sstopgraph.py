@@ -36,49 +36,57 @@ def semistruct_to_pgraph(in_file, mapcfg_file, out_file='./pgraph.json',debug=Fa
    }
 
    # add nodes to the property graph
-   for element in source_data[mapping_config['schema-map']['nodes'][0]['label']]:
-      node = {
-         "node": {
-            "id": element[mapping_config['schema-map']['nodes'][0]['node-id']],
-            "label": mapping_config['schema-map']['nodes'][0]['label'],
-            "properties":{} #mapping_config['schema-map']['nodes'][0]['node-properties']
-         }
-      }
 
-      # Map properties to the node
-      for property_name, property_mapping in mapping_config['schema-map']['nodes'][0]['node-properties'].items():
-         property_value = element
-         for key in property_mapping.split('.'):
-            property_value = property_value.get(key, None)
-            if property_value is None:
-               break
-
-         if property_value is not None:
-            node["node"]["properties"][property_name] = {
-            "datatype": "string",  # comment : modify this based on the actual data types
-            "data value": property_value
+   for i in range(len(mapping_config['schema-map']['nodes'])):
+      for element in source_data[mapping_config['schema-map']['nodes'][i]['label']]:
+         node = {
+            "node": {
+                "id": element[mapping_config['schema-map']['nodes'][i]['node-id']],
+                "label": mapping_config['schema-map']['nodes'][i]['label'],
+                "properties": {}  # mapping_config['schema-map']['nodes'][i]['node-properties']
             }
-
-      property_graph["graph"]["nodes"].append(node)
+         }
     
-
+         # Map properties to the node
+         for property_name, property_mapping in mapping_config['schema-map']['nodes'][i]['node-properties'].items():
+            # Assuming property_mapping is a dictionary
+            data_value = property_mapping.get("data_value", None)
+            data_type = property_mapping.get("data_type", None)
+    
+            # Now, you can split the data_value (assuming it's a string)
+            if data_value is not None:
+               for key in data_value.split('.'):
+                  property_value = element.get(key, None)
+                  if property_value is None:
+                     break
+    
+            if property_value is not None:
+               node["node"]["properties"][property_name] = {
+                  "datatype": data_type,  # comment: modify this based on the actual data types
+                  "data value": property_value
+               }
+    
+         property_graph["graph"]["nodes"].append(node)
+ 
    # source data and add edges to the property graph
-   for element in source_data[mapping_config['schema-map']['nodes'][0]['label']]:
-      source_id = element[mapping_config['schema-map']['nodes'][0]['node-id']]
-      target = element.get(mapping_config['schema-map']['edges'][0]['edge-type'], [])
+   for j in range(len(mapping_config['schema-map']['edges'])):
+      for element in source_data[mapping_config['schema-map']['edges'][j]['_source_type']]:
+         source_id = element[mapping_config['schema-map']['edges'][j]['_source']]
+         target = element.get(mapping_config['schema-map']['edges'][j]['edge-type'], [])
 
-      for target_id in target:
-         edge = {
-            "edge": {
-               "id": len(property_graph["graph"]["edges"]) + 1,
-               "relationship": mapping_config['schema-map']['edges'][0]['relationship'],
-               "from_node_id": source_id,
-               "to_node_id": target_id,
-               "properties": {}
+         for target_id in target:
+            edge = {
+                "edge": {
+                    "id": len(property_graph["graph"]["edges"]) + 1,
+                    "relationship": mapping_config['schema-map']['edges'][j]['relationship'],
+                    "from_node_id": source_id,
+                    "to_node_id": target_id,
+                    "properties": {}
+                }
             }
-         }
 
-         property_graph["graph"]["edges"].append(edge)
+            property_graph["graph"]["edges"].append(edge)
+ 
 
    # Save the property graph in JSON format
    if debug:
