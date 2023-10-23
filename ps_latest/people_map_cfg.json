@@ -17,6 +17,10 @@
                     "Gender": {
                         "data_type": "string",
                         "data_value": "Gender"
+                    },
+                    "friends": {
+                        "data_type": "list",
+                        "data_value": "friends"
                     }
                 }
             }

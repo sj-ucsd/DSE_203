@@ -27,7 +27,7 @@
                         "data_value": "generes"
                     },
                     "Cast": {
-                        "data_type": "string",
+                        "data_type": "list",
                         "data_value": "cast"
                     }
                 }
@@ -35,12 +35,8 @@
 		{
 			"node-type":"$.People",
 			"label":"People",
-			"node-id":"id",
+			"node-id":"Name",
                 "node-properties": {
-                    "Name": {
-                        "data_type": "string",
-                        "data_value": "Name"
-                    },
                     "Age": {
                         "data_type": "numeric",
                         "data_value": "Age"
@@ -48,6 +44,10 @@
                     "Gender": {
                         "data_type": "string",
                         "data_value": "Gender"
+                    },
+                    "friends": {
+                        "data_type": "list",
+                        "data_value": "friends"
                     }
                 }
 		}],
@@ -58,22 +58,12 @@
 			"direction":"Out",
 			"edge-id":"",
 			"edge-properties":"",
-			"_source":"cast",
-			"_source_type":"Movies",
-			"_target":"Name",
-			"_target_type":"People"
-		},
-		{
-			"edge-type":"friends",
-			"relationship":"IS_FRIENDS_WITH",
-			"direction":"Out",
-			"edge-id":"",
-			"edge-properties":"",
 			"_source":"id",
 			"_source_type":"People",
-			"_target":"friends",
-			"_target_type":"People"
-		}]
+			"_target":"Cast",
+			"_target_type":"Movies"
+		}
+             ]
 	}
 }
 	

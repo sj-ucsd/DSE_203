@@ -47,13 +47,13 @@
 		"edges" : [
 		{
 			"edge-type":"",
-			"relatioship":"Created",
+			"relationship":"Created",
 			"direction":"Out",
 			"edge-id":"",
 			"edge-properties":"",
-			"_source":"name",
+			"_source":"id",
 			"_source_type":"Authors",
-			"_target":"author",
+			"_target":"Author",
 			"_target_type":"Books"
 		}]
 	}
