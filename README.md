@@ -28,6 +28,8 @@ To build and deploy the package locally, recommend following steps:
 1. Input File needs to be a well formed json file.
 2. The initial version of this translator will only recognize nodes that are  one level below the root of teh JSON file (i.e. no nested data that will become nodes)
 3. Template of a data input file is as follows:
+   
+```
    {
       "node" :[
       {
@@ -51,7 +53,9 @@ To build and deploy the package locally, recommend following steps:
       ...],
    ...
 }
-4. See examples in the input_files folder: people.json, movies.json, and books.json
+
+```
+5. See examples in the input_files folder: people.json, movies.json, and books.json
 
 ### Mapping Configuration File
 Mapping Configuration Files are used to provide the instructions on which fileds in the data input file apply to which elemnts in a property graph. 
@@ -59,6 +63,7 @@ Mapping Configuration Files are used to provide the instructions on which fileds
 1. In this initial version of the translator, the mapping configuration file will generate nodes and edges with some fixed fields for each node (id, label, node_type, node-properties) and edge (id, relationship, direction, _source, _target, edge-properties). If the data file does not have input that goes into one of these fields, then the field is still included but the value would be an empty string "".
 2. Networkx is used to generate the graph internally to the translator, so the id is used as the displayed value for the node.
 3. Template Mapping Cofiguration File looks like the following:
+```
 {
     "schema-map": {
         "nodes": [
@@ -89,7 +94,10 @@ Mapping Configuration Files are used to provide the instructions on which fileds
       {
          ...
       },
-      ...],
+      ...]
    ...
-}
-4. See examples in the input_files folder: people_map_cfg.json, movies_map_cfg.json, and books_map_cfg.json
+} 
+
+```
+
+5. See examples in the input_files folder: people_map_cfg.json, movies_map_cfg.json, and books_map_cfg.json
