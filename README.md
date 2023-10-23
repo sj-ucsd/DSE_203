@@ -1,5 +1,6 @@
 # DSE_203
-203 project
+203 Group 1 Assignment 1
+Sagar Jogadhenu, Prakhar Shukla, Laben Fisher
 ## Package details
 **sstopgraph** package takes a semistructured data in json format as input and generates pgraph in json format as output. 
 The package is available from test Pypi at https://test.pypi.org/project/sstopgraph-pkg/
@@ -112,3 +113,7 @@ Mapping Configuration Files are used to provide the instructions on which fileds
 1. Code doesn't support arbitrary parsing of jsonpath expressions to create nodes and edges. Planned for next revision
 2. Does not support special characters in strings. Will add utf support in future version
 3. For the edges, the _target has to be a property attribute of a node.
+
+## Note:
+The original Notebook is included in the directory for reference and for future use by the authors.
+
