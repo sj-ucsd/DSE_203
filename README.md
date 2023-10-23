@@ -1,6 +1,6 @@
 # DSE_203
 203 Group 1 Assignment 1
-Sagar Jogadhenu, Prakhar Shukla, Laben Fisher
+### Sagar Jogadhenu, Prakhar Shukla, Laben Fisher
 ## Package details
 **sstopgraph** package takes a semistructured data in json format as input and generates pgraph in json format as output. 
 The package is available from test Pypi at https://test.pypi.org/project/sstopgraph-pkg/
