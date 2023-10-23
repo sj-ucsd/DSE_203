@@ -2,40 +2,59 @@
 	"schema-map": {
 		"nodes" : [
 		{
-			"node-type":"$.books",
+			"node-type":"$.Books",
 			"label":"Books",
-			"node-id":"",
+			"node-id":"isbn",
 			"node-properties":{
-				"Title":"$.books.title",
-				"Author":"$.books.author",
-				"Published Year":"$.books.published_year",
-				"ISBN": "$books.isbn",
-				"Genere": "$.books.genre"
+				"Title": {
+                        "data_type": "string",
+                        "data_value": "title"
+                    },
+				"Author":{
+                        "data_type": "string",
+                        "data_value": "author"
+                    },
+				"Published Year":{
+                        "data_type": "numeric",
+                        "data_value": "published_year"
+                    },
+				"Genere": {
+                        "data_type": "list",
+                        "data_value": "genere"
+                    }
 			}
 		},	
 		{
-			"node-type":"$.authors",
+			"node-type":"$.Authors",
 			"label":"Authors",
-			"node-id":"",
+			"node-id":"name",
 			"node-properties":{
-				"Name":"$.authors.name",
-				"Birth Year":"$.authors.birth_year",
-				"Death Year":"$.authors.death_year",
-				"Country of Birth":"$.authors.country_of_birth"
+				"Birth Year":{
+                        "data_type": "numeric",
+                        "data_value": "birth_year"
+                    },
+				"Death Year":{
+                        "data_type": "numeric",
+                        "data_value": "death_year"
+                    },
+				"Country of Birth":{
+                        "data_type": "string",
+                        "data_value": "country_of_birth"
+                    }
 			}
 
 		}],
 		"edges" : [
 		{
 			"edge-type":"",
-			"relatioship":"Created",
+			"relationship":"Created",
 			"direction":"Out",
 			"edge-id":"",
 			"edge-properties":"",
-			"_source":"$.books.author",
-			"_source_type":"$.authors",
-			"_target":"$.books.title",
-			"_target_type":"$.books"
+			"_source":"id",
+			"_source_type":"Authors",
+			"_target":"Author",
+			"_target_type":"Books"
 		}]
 	}
 }

@@ -6,9 +6,22 @@
                 "label": "People",
                 "node-id": "id",
                 "node-properties": {
-                    "Name": "Name",
-                    "Age": "Age",
-                    "Gender": "Gender"
+                    "Name": {
+                        "data_type": "string",
+                        "data_value": "Name"
+                    },
+                    "Age": {
+                        "data_type": "numeric",
+                        "data_value": "Age"
+                    },
+                    "Gender": {
+                        "data_type": "string",
+                        "data_value": "Gender"
+                    },
+                    "friends": {
+                        "data_type": "list",
+                        "data_value": "friends"
+                    }
                 }
             }
         ],
@@ -20,7 +33,9 @@
                 "edge-id": "",
                 "edge-properties": "",
                 "_source": "id",
-                "_target": "friends"
+				"_source_type":"People",
+                "_target": "friends",
+				"_target_type":"People"
             }
         ]
     }
